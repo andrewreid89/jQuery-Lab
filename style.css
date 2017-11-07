@@ -1,0 +1,126 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    background-color:#EEE;
+}
+
+h1{
+    color:#e34e45;
+    text-align:center;
+    margin-top:35px;
+    margin-bottom:10px;
+}
+
+h3{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+#TableOfCircles{
+    position:relative;
+    width:70%;
+    height:70%;
+    border:1px solid black;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    z-index:1;
+}
+
+.rowCircles{
+    margin-top:25px;
+    margin-bottom:25px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+
+.Circle{
+    border:1px solid black;
+    width:100px;
+    height:100px;
+    background-color: lawngreen;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+#form{
+/*    position:absolute;*/
+/*I could not figure out how to center this damned form*/
+    
+    top:100px;
+    width:70%;
+    height:600px;
+    margin: 0 auto;
+    z-index:2;
+    display:flex;
+    flex-direction: column;
+    border:1px solid black;
+    box-shadow:   0px   0px   31px   1px   rgba(0,0,0,0.3);
+}
+
+#X{
+    color:#ADAAAA;
+    border:none;
+    width:30px;
+    height:30px;
+    font-size:20px;
+    align-self:flex-end;
+    margin-top:20px;
+    margin-right:50px;
+    
+}
+
+#form h2{
+    color:#e34e45;
+    text-align:left;
+    margin-top:20px;
+    margin-left: 30px;
+}
+
+#form h4{
+    margin-left:30px;
+}
+
+#TableNoLine{
+    display:inline;
+}
+
+#form input{
+    width:80%;
+    font-size:20px;
+    margin: 20px 0px 20px 30px;
+    border:none;
+    border-bottom:1px solid #CCC;
+    
+}
+
+#saveBtn{
+    background-color:#008000;
+    color:white;
+    font-size:20px;
+    width:80%;
+    margin:30px auto;
+    height:50px;
+    box-shadow:   0px   5px   15px   1px   rgba(0,0,0,0.3);
+    
+}
+
+
+.reserved{
+    border:1px solid black;
+    width:100px;
+    height:100px;
+    background-color: red;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.available{
+    background-color:#EEE
+}
