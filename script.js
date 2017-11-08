@@ -12,36 +12,7 @@ $("button").on("mouseenter", function(){
 });
 
 
-    
-/*Changes the a Reserved circle from red to black, and disables the clicking*/  
-$("button").on("mouseenter", function() {
-    if ($(this).hasClass("reserved")) {
-        $(this).css("background-color", "black");
-        container.off("click");
-    }});
-$("button").on("mouseenter", function(e){
-    if($(this).hasClass("reserved")){    
-        $(".HoverBox").show(500);
-        $(".HoverBox").offset({left:e.pageX,top:e.pageY});
-    }});
-$("button").on("mouseleave", function(){
-    if($(this).hasClass("reserved")){
-        $(this).css("background-color", "red");
-        $(".HoverBox").hide();
-    }});
-    
- 
-  
-/*Code from Mary Clare about the hover thing*/
-//$("button").on("mouseenter", function(){
-//    if($(this).hasClass
-//    
-//    
-//    click(function(e){
-//         
-// })
-//        
-    
+
     
 var TableNo;    
 var container;
@@ -62,49 +33,51 @@ $(".available").on("click", function (){
     container = $(this);
 });
 
-
+    
+var FullInfo;    
+var userName;
+var phoneNum;
+var partyNum;
     
 /*Changing class from available to reserved after clicking Save button*/    
 $("#saveBtn").on("click", function(event){
     container.addClass("reserved");
     container.removeClass("available");
+    userName = document.getElementById("Name").value;
+    phoneNum = document.getElementById("PhoneNum").value;
+    partyNum = document.getElementById("NumPartyInput").value;
     $("#FormHolder").hide();
+//    FullInfo = [userName, phoneNum, partyNum];
+//    console.log(FullInfo);
+    var nameOUTput = document.getElementById("NameOutput");
+    nameOUTput.innerText = userName;
 });
 
-    
 
-//    
-//    
-///*Displaying the HoverBox on mouseenter*/
-//$(".available").on("mouseenter", function(){
-//    document.querySelectorAll(".HoverBox")[0].style.display = "block";
-//}).on("mouseleave", function(){
-//    document.querySelectorAll(".HoverBox")[0].style.display = "none";
-//}); 
-//    
-//    
+/***I can't figure out how to assign the information specifically to that circle.  I can create an ID and make it work, but would need to do this 9 times, and I know there is an easier way.////
+    
+   
+    
+    
+/*Changes the a Reserved circle from red to black, and disables the clicking*/  
+$("button").on("mouseenter", function() {
+    if ($(this).hasClass("reserved")) {
+        $(this).css("background-color", "black");
+        container.off("click");
+    }});
+$("button").on("mouseenter", function(e){
+    if($(this).hasClass("reserved")){    
+        $(".HoverBox").show(500);
+        $(".HoverBox").offset({left:e.pageX,top:e.pageY});
+    }});
+$("button").on("mouseleave", function(){
+    if($(this).hasClass("reserved")){
+        $(this).css("background-color", "red");
+        $(".HoverBox").hide();
+    }});    
     
     
     
-    
-    
-/*Capture form inputs into variables*/
-
-//    
-//var userName;
-//var phoneNum;
-//var partyNum;
-//    
-//function formCapture(){
-//    userName = document.getElementById("Name").value;
-//    console.log(userName);
-//    
-//}    
-    
-    
-//    <input type="text" id="Name" placeholder="Name">
-//            <input type="text" id="PhoneNum" placeholder="Phone Number">
-//            <input type="text" id="NumPartyInput" placeholder="Number in your party">
     
     
     
