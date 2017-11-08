@@ -35,7 +35,7 @@ h3{
 }
 
 
-.Circle{
+.available{
     border:1px solid black;
     width:100px;
     height:100px;
@@ -46,14 +46,17 @@ h3{
     justify-content:center;
 }
 
+#FormHolder{
+    display:flex;
+    justify-content:center;
+    display:none;
+}
 
-#form{
-/*    position:absolute;*/
-/*I could not figure out how to center this damned form*/
-    
+form{
+    position:fixed;
     top:100px;
     width:70%;
-    height:600px;
+    height:550px;
     margin: 0 auto;
     z-index:2;
     display:flex;
@@ -74,14 +77,14 @@ h3{
     
 }
 
-#form h2{
+form h2{
     color:#e34e45;
     text-align:left;
     margin-top:20px;
     margin-left: 30px;
 }
 
-#form h4{
+form h4{
     margin-left:30px;
 }
 
@@ -89,14 +92,14 @@ h3{
     display:inline;
 }
 
-#form input{
+form input{
     width:80%;
     font-size:20px;
     margin: 20px 0px 20px 30px;
     border:none;
     border-bottom:1px solid #CCC;
-    
 }
+
 
 #saveBtn{
     background-color:#008000;
@@ -106,7 +109,6 @@ h3{
     margin:30px auto;
     height:50px;
     box-shadow:   0px   5px   15px   1px   rgba(0,0,0,0.3);
-    
 }
 
 
@@ -119,8 +121,20 @@ h3{
     display:flex;
     align-items:center;
     justify-content:center;
+    cursor: not-allowed;
 }
 
-.available{
-    background-color:#EEE
+.HoverBox{
+    border:1px solid black;
+    height:80px;
+    width:100px;
+    position:absolute;
+    top:20px;
+    display:none;
 }
+
+.HoverBox p{
+    font-size:10px;
+    margin-left:3px;
+}
+

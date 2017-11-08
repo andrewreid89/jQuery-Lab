@@ -13,39 +13,47 @@
     <div id="TableOfCircles">
         
         <div class="rowCircles">
-            <button class="Circle" id="circle1" type="button" onclick="">1</button>
-            <button class="Circle" id="circle2" type="button" onclick="">2</button>
-            <button class="Circle" id="circle3" type="button" onclick="">3</button>
+            <div class="CircleAndDiv">
+                <button class="available" id="circle1" value="1" type="button" onclick="">1</button>
+                <div class="HoverBox">
+                    <p class="Name">Name:  <a class="Name"></a></p>
+                    <p class="PhoneNum">Phone Number:  <a class="PhoneNum"></a></p>
+                    <p class="PartyNum"># in Party:  <a class="PartyNum"></a></p>
+                </div>
+            </div>
+            <button class="available" id="circle2" value="2" type="button" onclick="">2</button>
+            <button class="available" id="circle3" value="3" type="button" onclick="">3</button>
+                    
         </div> 
         
         <div class="rowCircles">
-            <button class="Circle" id="circle4" type="button" onclick="">4</button>
-            <button class="Circle" id="circle5" type="button" onclick="">5</button>
-            <button class="Circle" id="circle6" type="button" onclick="">6</button>
+            <button class="available" id="circle4" value="4" type="button" onclick="">4</button>
+            <button class="available" id="circle5" value="5" type="button" onclick="">5</button>
+            <button class="available" id="circle6" value="6" type="button" onclick="">6</button>
         </div>
         
         <div class="rowCircles">
-            <button class="Circle" id="circle7" type="button" onclick="">7</button>
-            <button class="Circle" id="circle8" type="button" onclick="">8</button>
-            <button class="Circle" id="circle9" type="button" onclick="">9</button>
+            <button class="available" id="circle7" value="7" type="button" onclick="">7</button>
+            <button class="available" id="circle8" value="8" type="button" onclick="">8</button>
+            <button class="available" id="circle9" value="9" type="button" onclick="">9</button>
         </div>
     </div>
     
     
     
-    <div id="form">
-        <button id="X" onclick="">X</button>
-        <h2>New Reservation</h2>
-        <div id="TableNoLine">
-            <h4>Table Number:</h4>
-            <p id="TableNo">TableNo</p>
-        </div>
-        <input type="text" id="Name" placeholder="Name">
-        <input type="text" id="PhoneNum" placeholder="Phone Number">
-        <input type="text" id="NumPartyInput" placeholder="Number in your party">
-        <button type="button" id="saveBtn" onclick="">SAVE</button>
+    <div id="FormHolder">
+        <form>
+            <button id="X" onclick="">X</button>
+            <h2>New Reservation</h2>
+            <div id="TableNoLine">
+                <h4>Table Number:  <a id="TableNo"></a></h4>
+            </div>
+            <input type="text" id="Name" placeholder="Name">
+            <input type="text" id="PhoneNum" placeholder="Phone Number">
+            <input type="text" id="NumPartyInput" placeholder="Number in your party">
+            <button type="button" id="saveBtn" onclick="">SAVE</button>
+        </form>
     </div>
-
     
     
     
